@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:src="@drawable/prstore"
+        android:id="@+id/picture01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/logo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PR Store"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20sp"
+        app:layout_constraintTop_toBottomOf="@id/logo1"/>
+
+    <TextView
+        android:id="@+id/slogan01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Best Indian cuisine"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:textColor="@android:color/system_neutral1_400"
+        app:layout_constraintTop_toBottomOf="@id/title01"
+        android:layout_marginStart="20sp"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="350sp"
+        android:id="@+id/divider01"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/darker_gray"
+        android:padding="10sp"
+        app:layout_constraintTop_toBottomOf="@id/slogan01"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="39dp" />
+
+    <TextView
+        android:id="@+id/or01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/divider01"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <ImageView
+        android:id="@+id/discount"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/ic_baseline_discount_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/moneyback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get ₹30 instant discount on order above ₹700"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/divider01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/discount"
+        app:layout_constraintTop_toBottomOf="@+id/slogan01"
+        app:layout_constraintVertical_bias="0.615"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/moneyback01"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/ic_baseline_attach_money_24"
+        app:layout_constraintBottom_toTopOf="@+id/fresh"
+        app:layout_constraintEnd_toStartOf="@+id/discount01"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/discount01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Get ₹50 Gc Money on order above ₹100"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider01"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/fresh"
+        android:layout_width="108dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/warm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/certificate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discount01"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/certificate"
+        android:layout_width="108dp"
+        android:layout_height="63dp"
+        android:src="@drawable/certificate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/love"
+        android:layout_width="108dp"
+        android:layout_height="63dp"
+        android:src="@drawable/heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/certificate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:id="@+id/divider02"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        android:padding="10sp"
+        app:layout_constraintTop_toBottomOf="@id/certificate"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="39dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="107dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="596dp"
+        android:src="@drawable/tag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture01"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/prrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="102dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/white"
+        android:text="Menu"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/certificate"
+        app:layout_constraintVertical_bias="0.929" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "208656655926",
+    "project_id": "galgotiascafephoneauth",
+    "storage_bucket": "galgotiascafephoneauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208656655926:android:560c2f9a5403c5a32dda97",
+        "android_client_info": {
+          "package_name": "com.devanshsaxena.cafeapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208656655926-7rmdd1k5s0s3fulk8hnji9aht27k85cj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devanshsaxena.cafeapplication",
+            "certificate_hash": "74c4a43c625b1a08a225fba17145168bd8183af8"
+          }
+        },
+        {
+          "client_id": "208656655926-7a9c4htinh2huhvhppt2ij4l5683gc0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdoPmSh7bywETZt7_gui6v72gZvNPm1E8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208656655926-7a9c4htinh2huhvhppt2ij4l5683gc0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
