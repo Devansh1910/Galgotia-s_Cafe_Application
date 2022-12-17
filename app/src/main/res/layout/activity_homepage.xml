@@ -16,20 +16,20 @@
         android:textSize="25sp"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/signOutBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        android:text="Sign Out"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
-        app:layout_constraintStart_toStartOf="parent"
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="48dp"
+        android:onClick="Explore"
+        android:layout_height="40dp"
+        android:layout_marginTop="12.5dp"
+        android:src="@drawable/navigation_button"
+        app:layout_constraintBottom_toBottomOf="@+id/head"
+        app:layout_constraintEnd_toEndOf="@+id/head"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="@+id/head"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:layout_width="match_parent"

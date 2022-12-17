@@ -1,13 +1,12 @@
 package com.devanshsaxena.cafeapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.FirebaseAuth
 
 class Homepage : AppCompatActivity(),FoodAdapter.OnItemClickListener {
 
@@ -15,14 +14,9 @@ class Homepage : AppCompatActivity(),FoodAdapter.OnItemClickListener {
     private lateinit var foodList: ArrayList<Food>
     private lateinit var foodAdapter: FoodAdapter
 
-
-    private lateinit var auth : FirebaseAuth
-    private lateinit var signoutbtn : Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
-
         //............................................
         recyclerView = findViewById(R.id.recyclerview)
         recyclerView.setHasFixedSize(true)
@@ -53,18 +47,7 @@ class Homepage : AppCompatActivity(),FoodAdapter.OnItemClickListener {
             intent.putExtra("food",it)
             startActivity(intent)
         }
-
-        //................................................
-
-        auth = FirebaseAuth.getInstance()
-        signoutbtn = findViewById(R.id.signOutBtn)
-
-        signoutbtn.setOnClickListener{
-            auth.signOut()
-            startActivity(Intent(this,PhoneActivity::class.java))
-        }
     }
-
     override fun onClick(position: Int) {
         Toast.makeText(this,"Welcome",Toast.LENGTH_LONG).show()
     }
@@ -72,5 +55,12 @@ class Homepage : AppCompatActivity(),FoodAdapter.OnItemClickListener {
     override fun onLongClick(position: Int) {
         Toast.makeText(this,"Welcome",Toast.LENGTH_LONG).show()
     }
+    fun Explore(view: View) {
+
+        val intent = Intent(this,profile::class.java)
+        startActivity(intent)
+    }
 }
+
+
 
